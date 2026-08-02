@@ -1,4 +1,4 @@
-@import "variables";
+ @import "variables";
 @import "global";
 
 .card {
@@ -36,20 +36,19 @@ h2 {
   transition: all 0.3s ease;
 
   img {
+    width: 32px;
+    height: 32px;
     transition: all 0.3s ease;
   }
 
-  &:hover {
-    border-color: $text;
-  }
-
-  &.active {
+  &:hover,
+  &.active,
+  &:focus {
     border-color: $text;
   }
 
   &:focus {
     outline: none;
-    border-color: $text;
   }
 }
 
@@ -178,3 +177,4 @@ button {
     border-radius: 10px;
   }
 }
+
